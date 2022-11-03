@@ -87,9 +87,53 @@
 						<!-- Skill -->
 							<article id="skill">
 								<h2 class="major">前端技术库</h2>
-								<span class="image main"><img src="images/pic02.jpg" alt="" /></span>
-								<p>Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices.</p>
-								<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat tempus.</p>
+								<table class="button-demo">
+									<tr>
+										<td>效果</td>
+										<td>js</td>
+										<td>css</td>
+									</tr>
+									<tr>
+										<td class="button1"></td>
+										<td>
+											const newButton = document.createElement('button')
+											newButton.innerHTML = 'newButton-unclicked'
+											newButton.id = 'newButton'
+											newButton.className = 'newButton-unclicked'
+											newButton.addEventListener('click', function() {
+												if(newButton.innerHTML == 'newButton-unclicked'){
+													newButton.innerHTML = 'newButton-clicked'
+													newButton.className = 'newButton-clicked'
+												}
+												else{
+													newButton.innerHTML = 'newButton-unclicked'
+													newButton.className = 'newButton-unclicked'
+												}
+											})
+											document.getElementById('target').appendChild(newButton)
+										</td>
+										<td>
+											.newButton-unclicked{
+												background-color: #e7746f;
+												border-color: #e7746f;
+												border-radius: 4px;
+												font-size: 1em;
+												font-weight: 700;
+												color: white;
+												padding: 4px 10px 4px 10px;
+											}
+											.newButton-clicked{
+												background-color: #4c5c97;
+												border-color: #4c5c97;
+												border-radius: 4px;
+												font-size: 1em;
+												font-weight: 700;
+												color: white;
+												padding: 4px 10px 4px 10px;
+											}
+										</td>
+									</tr>
+								</table>
 							</article>
 
 						<!-- Contact -->
@@ -110,7 +154,7 @@
 											<textarea name="message" id="message" rows="4"></textarea>
 										</div>
 									</div>
-									<ul class="actions">
+									<ul class="actions">7\
 										<li><input type="submit" value="发送" class="primary" /></li>
 										<li><input type="reset" value="清空" /></li>
 									</ul>
@@ -385,6 +429,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/demo/button1.js"></script>
 
 	</body>
 </html>
