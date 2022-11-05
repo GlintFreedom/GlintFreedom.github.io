@@ -96,45 +96,49 @@
 									<tr>
 										<td id="button1"></td>
 										<td style="font-size: 5;">
-											<code class="language-c">
-												const newButton = document.createElement('button')<br/>
-												newButton.innerHTML = 'newButton-unclicked'<br/>
-												newButton.id = 'newButton'<br/>
-												newButton.className = 'newButton-unclicked'<br/>
-												newButton.addEventListener('click', function() {<br/>
-												&nbsp;if(newButton.innerHTML == 'newButton-unclicked'){<br/>
-												&nbsp;&nbsp;newButton.innerHTML = 'newButton-clicked'<br/>
-												&nbsp;&nbsp;newButton.className = 'newButton-clicked'<br/>
-												&nbsp;}<br/>
-												&nbsp;else{<br/>
-												&nbsp;&nbsp;newButton.innerHTML = 'newButton-unclicked'<br/>
-												&nbsp;&nbsp;newButton.className = 'newButton-unclicked'<br/>
-												&nbsp;}<br/>
-												})<br/>
-												document.getElementById('target').appendChild(newButton)
-											</code>
+											<pre>
+												<code class="language-c">
+													const newButton = document.createElement('button')<br/>
+													newButton.innerHTML = 'newButton-unclicked'<br/>
+													newButton.id = 'newButton'<br/>
+													newButton.className = 'newButton-unclicked'<br/>
+													newButton.addEventListener('click', function() {<br/>
+													&nbsp;if(newButton.innerHTML == 'newButton-unclicked'){<br/>
+													&nbsp;&nbsp;newButton.innerHTML = 'newButton-clicked'<br/>
+													&nbsp;&nbsp;newButton.className = 'newButton-clicked'<br/>
+													&nbsp;}<br/>
+													&nbsp;else{<br/>
+													&nbsp;&nbsp;newButton.innerHTML = 'newButton-unclicked'<br/>
+													&nbsp;&nbsp;newButton.className = 'newButton-unclicked'<br/>
+													&nbsp;}<br/>
+													})<br/>
+													document.getElementById('target').appendChild(newButton)
+												</code>
+											</pre>
 										</td>
 										<td style="font-size: 5;">
-											<code class="css">
-												.newButton-unclicked{<br/>
-													&nbsp;background-color: #e7746f;<br/>
-													&nbsp;border-color: #e7746f;<br/>
-													&nbsp;border-radius: 4px;<br/>
-													&nbsp;font-size: 1em;<br/>
-													&nbsp;font-weight: 700;<br/>
-													&nbsp;color: white;<br/>
-													&nbsp;padding: 4px 10px 4px 10px;<br/>
-													}<br/>
-													.newButton-clicked{<br/>
-													&nbsp;background-color: #4c5c97;<br/>
-													&nbsp;border-color: #4c5c97;<br/>
-													&nbsp;border-radius: 4px;<br/>
-													&nbsp;font-size: 1em;<br/>
-													&nbsp;font-weight: 700;<br/>
-													&nbsp;color: white;<br/>
-													&nbsp;padding: 4px 10px 4px 10px;<br/>
-													}
-											</code>
+											<pre>
+												<code class="css">
+													.newButton-unclicked{<br/>
+														&nbsp;background-color: #e7746f;<br/>
+														&nbsp;border-color: #e7746f;<br/>
+														&nbsp;border-radius: 4px;<br/>
+														&nbsp;font-size: 1em;<br/>
+														&nbsp;font-weight: 700;<br/>
+														&nbsp;color: white;<br/>
+														&nbsp;padding: 4px 10px 4px 10px;<br/>
+														}<br/>
+														.newButton-clicked{<br/>
+														&nbsp;background-color: #4c5c97;<br/>
+														&nbsp;border-color: #4c5c97;<br/>
+														&nbsp;border-radius: 4px;<br/>
+														&nbsp;font-size: 1em;<br/>
+														&nbsp;font-weight: 700;<br/>
+														&nbsp;color: white;<br/>
+														&nbsp;padding: 4px 10px 4px 10px;<br/>
+														}
+												</code>
+											</pre>
 										</td>
 									</tr>
 								</table>
@@ -433,6 +437,9 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/highlight.min.js"></script>
+			<script>hljs.initHighlightingOnLoad();</script>
+
 			<script src="assets/demo/button1.js"></script>
 
 	</body>
