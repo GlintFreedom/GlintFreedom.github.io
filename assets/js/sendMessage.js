@@ -1,4 +1,4 @@
-import emailjs from 'email.min.js'
+import 'email.min.js'
 
 const sendButton = document.getElementById('send-button')
 const sendMessage = document.getElementById('message').value
