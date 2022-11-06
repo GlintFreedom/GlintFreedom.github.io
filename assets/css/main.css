@@ -280,7 +280,7 @@ input, select, textarea {
 			display: block;
 			line-height: 1.75;
 			padding: 1rem 1.5rem;
-			overflow-x: auto;
+			overflow-x: scroll !important;
 		}
 
 	hr {
