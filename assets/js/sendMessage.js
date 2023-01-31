@@ -25,4 +25,4 @@ const sendMove = e => {
     alert('Oops... ' + JSON.stringify(error));
   });
 }
-sendButton.addEventListener('submit', sendMove)
+sendButton.addEventListener('onclick', sendMove)
