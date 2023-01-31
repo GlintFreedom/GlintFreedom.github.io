@@ -1,5 +1,5 @@
-import './email.min.js'
-import emailjs from 'https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js'
+// import './email.min.js'
+// import emailjs from 'https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js'
 import apiKeys from './apikeys.js'
 
 const sendButton = document.getElementById('send-button')
