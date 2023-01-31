@@ -1,6 +1,5 @@
 // import './email.min.js'
 // import emailjs from 'https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js'
-import apiKeys from './apikeys.js'
 
 const sendButton = document.getElementById('send-button')
 const sendMessage = document.getElementById('message').value
@@ -11,9 +10,9 @@ const sendMove = e => {
   e.preventDefault()
 
   var formData = new FormData(this);
-  formData.append('service_id', apiKeys.SERVICE_ID);
-  formData.append('template_id', apiKeys.TEMPLATE_ID);
-  formData.append('user_id', apiKeys.USER_ID);
+  formData.append('service_id', 'service_1');
+  formData.append('template_id', 'template_ddf2xzx');
+  formData.append('user_id', 'rnVbmcYqjSuK_oPfH');
   
   $.ajax('https://api.emailjs.com/api/v1.0/email/send-form', {
     type: 'POST',
