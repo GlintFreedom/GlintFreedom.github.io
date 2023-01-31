@@ -10,17 +10,20 @@ const sendEmail = document.getElementById('email').value
 const sendMove = e => {
   e.preventDefault()
 
-  emailjs
-    .sendForm('gmail', apiKeys.TEMPLATE_ID, e.target, apiKeys.USER_ID)
-    .then(
-      result => {
-        console.log(result.text)
-        alert('发送成功')
-      },
-      error => {
-        console.log(error.text)
-        alert('发送失败')
-      }
-    )
+  var formData = new FormData(this);
+  formData.append('service_id', apiKeys.SERVICE_ID);
+  formData.append('template_id', apiKeys.TEMPLATE_ID);
+  formData.append('user_id', apiKeys.USER_ID);
+  
+  $.ajax('https://api.emailjs.com/api/v1.0/email/send-form', {
+    type: 'POST',
+    data: formData,
+    contentType: false, // auto-detection
+    processData: false // no need to parse formData to string
+  }).done(function() {
+    alert('Your mail is sent!');
+  }).fail(function(error) {
+    alert('Oops... ' + JSON.stringify(error));
+  });
 }
 sendButton.addEventListener('submit', sendMove)
