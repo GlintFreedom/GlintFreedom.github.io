@@ -1,8 +1,8 @@
 const filePath = 'assets/demo/';
 const filePairs = {
   'button1': [filePath+'button1.js', filePath+'button1.css'],
-  // 'animation1': [filePath+'button1.js', filePath+'button1.css'],
-  // 'button1': [filePath+'button1.js', filePath+'button1.css'],
+  // 'animation1': [filePath+'animation1.js', filePath+'animation1.css'],
+  'switch1': [filePath+'switch1.js', filePath+'switch1.css'],
 };
 
 // 函数：加载文件内容并拼接
