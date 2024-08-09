@@ -1,5 +1,5 @@
-const switchLabel = document.createElement('label');
-switchLabel.className = 'xixi__switch';
+const switchContainer = document.createElement('label');
+switchContainer.className = 'xixi__switch';
 
 const switchWrapper = document.createElement('span');
 switchWrapper.className = 'xixi__switch__wrapper';
@@ -14,25 +14,25 @@ const switchEmoji = document.createElement('span');
 switchEmoji.className = 'xixi__switch__emoji';
 
 const emojiFaceSad = document.createElement('span');
-emojiFaceSad.className = 'xixi__switch__emoji__face xixi__switch__emoji__face--sad';
+emojiFaceSad.className = 'xixi__switch__emoji-face xixi__switch__emoji-face--sad';
 const emojiEyeSad1 = document.createElement('span');
-emojiEyeSad1.className = 'xixi__switch__emoji__eye';
+emojiEyeSad1.className = 'xixi__switch__emoji-eye';
 const emojiEyeSad2 = document.createElement('span');
-emojiEyeSad2.className = 'xixi__switch__emoji__eye';
+emojiEyeSad2.className = 'xixi__switch__emoji-eye';
 const emojiMouthSad = document.createElement('span');
-emojiMouthSad.className = 'xixi__switch__emoji__mouth';
+emojiMouthSad.className = 'xixi__switch__emoji-mouth';
 emojiFaceSad.appendChild(emojiEyeSad1);
 emojiFaceSad.appendChild(emojiEyeSad2);
 emojiFaceSad.appendChild(emojiMouthSad);
 
 const emojiFaceHappy = document.createElement('span');
-emojiFaceHappy.className = 'xixi__switch__emoji__face';
+emojiFaceHappy.className = 'xixi__switch__emoji-face xixi__switch__emoji-face--happy';
 const emojiEyeHappy1 = document.createElement('span');
-emojiEyeHappy1.className = 'xixi__switch__emoji__eye';
+emojiEyeHappy1.className = 'xixi__switch__emoji-eye';
 const emojiEyeHappy2 = document.createElement('span');
-emojiEyeHappy2.className = 'xixi__switch__emoji__eye';
+emojiEyeHappy2.className = 'xixi__switch__emoji-eye';
 const emojiMouthHappy = document.createElement('span');
-emojiMouthHappy.className = 'xixi__switch__emoji__mouth';
+emojiMouthHappy.className = 'xixi__switch__emoji-mouth';
 emojiFaceHappy.appendChild(emojiEyeHappy1);
 emojiFaceHappy.appendChild(emojiEyeHappy2);
 emojiFaceHappy.appendChild(emojiMouthHappy);
@@ -42,15 +42,11 @@ switchEmoji.appendChild(emojiFaceHappy);
 
 switchWrapper.appendChild(switchInput);
 switchWrapper.appendChild(switchEmoji);
-switchLabel.appendChild(switchWrapper);
+switchContainer.appendChild(switchWrapper);
 
-const switchLabelText = document.createElement('span');
-switchLabelText.className = 'xixi__switch__label';
-switchLabelText.textContent = 'Power';
-switchLabel.appendChild(switchLabelText);
+document.getElementById('switch1').appendChild(switchContainer);
 
-document.getElementById('switch1').appendChild(switchLabel);
-
-switchInput.addEventListener('change', function () {
-  switchEmoji.classList.toggle('xixi__switch__emoji--active', switchInput.checked);
-});
+// switchInput.addEventListener('change', function () {
+//   console.log('Switch changed');
+//   // switchWrapper.style.backgroundColor = '#0ac213';
+// });
