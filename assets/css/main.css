@@ -1669,14 +1669,12 @@ input, select, textarea {
 }
 .module-demo tr:not(:first-child) {
 	height: 50vh;
-	display: block;
 }
 .module-demo td:first-child {
 	width: 20em;
 	word-wrap: break-word; /* 处理超长内容 */
 }
 .module-demo td {
-	display: flex;
 	align-items: center;
 	justify-content: center;
 	height: 100%;
