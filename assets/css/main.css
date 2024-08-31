@@ -1674,7 +1674,7 @@ input, select, textarea {
 	width: 20em;
 	word-wrap: break-word; /* 处理超长内容 */
 }
-.my-table td {
+.module-demo td {
 	/* display: flex; */
 	align-items: center;
 	justify-content: center;
