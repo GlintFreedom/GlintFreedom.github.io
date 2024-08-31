@@ -1667,7 +1667,7 @@ input, select, textarea {
 	table-layout: fixed;
 	width: 100%;
 }
-.module-demo tr {
+.module-demo tr:not(:first-child) {
 	height: 50vh;
 }
 .module-demo td:first-child {
