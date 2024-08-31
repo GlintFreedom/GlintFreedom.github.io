@@ -1677,6 +1677,7 @@ input, select, textarea {
 .module-demo td {
 	align-items: center;
 	justify-content: center;
+	height: 50vh;
 	max-height: 50vh;
 	overflow: auto;
 }
