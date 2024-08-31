@@ -1662,3 +1662,13 @@ input, select, textarea {
 		body.is-preload #footer {
 			opacity: 0;
 		}
+
+.module-demo {
+	table-layout: fixed;
+	width: 100%;
+}
+
+.module-demo td:first-child {
+	width: 10em;
+	word-wrap: break-word; /* 处理超长内容 */
+}
