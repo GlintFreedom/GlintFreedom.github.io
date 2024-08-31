@@ -198,7 +198,7 @@
 }
 
 [dir='rtl'] .xixi__switch__input:checked + .xixi__switch__emoji {
-  transform: translateX(-130%);
+  transform: translateX(-140%);
 }
 
 .xixi__switch__input:checked + .xixi__switch__emoji .xixi__switch__emoji-face {

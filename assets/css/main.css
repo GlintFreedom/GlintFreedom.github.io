@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300italic,600italic,300,600");
 @import url(../demo/button1.css);
 @import url(../demo/switch1.css);
-@import url(../demo/animation1.css);
+/* @import url(../demo/animation1.css); */
 @import url(agate.min.css);
 /*
 	Dimension by HTML5 UP
@@ -1668,7 +1668,7 @@ input, select, textarea {
 	width: 100%;
 }
 .module-demo tr:not(:first-child) {
-	height: 50vh;
+	height: 70vh;
 }
 .module-demo td:first-child {
 	width: 20em;
@@ -1677,7 +1677,7 @@ input, select, textarea {
 .module-demo div {
 	align-items: center;
 	justify-content: center;
-	max-height: 50vh;
+	max-height: 70vh;
 	overflow: auto;
 }
 .module-demo pre, .module-demo code {
