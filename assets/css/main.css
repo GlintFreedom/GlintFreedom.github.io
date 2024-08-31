@@ -1669,6 +1669,6 @@ input, select, textarea {
 }
 
 .module-demo td:first-child {
-	width: 30em;
+	width: 20em;
 	word-wrap: break-word; /* 处理超长内容 */
 }
