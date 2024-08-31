@@ -1675,12 +1675,11 @@ input, select, textarea {
 	word-wrap: break-word; /* 处理超长内容 */
 }
 .module-demo td {
-	/* display: flex; */
+	display: flex;
 	align-items: center;
 	justify-content: center;
 	height: 100%;
 	max-height: 50vh;
 	overflow: auto;
 	/* text-overflow: ellipsis; */
-	border: 1px solid #ccc;
 }
