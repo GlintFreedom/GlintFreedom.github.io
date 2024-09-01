@@ -45,8 +45,3 @@ switchWrapper.appendChild(switchEmoji);
 switchContainer.appendChild(switchWrapper);
 
 document.getElementById('switch1').appendChild(switchContainer);
-
-// switchInput.addEventListener('change', function () {
-//   console.log('Switch changed');
-//   // switchWrapper.style.backgroundColor = '#0ac213';
-// });
