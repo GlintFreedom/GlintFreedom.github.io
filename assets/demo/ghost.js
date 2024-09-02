@@ -48,7 +48,8 @@ document.addEventListener('mousemove', function(event) {
     const pageY = document.documentElement.scrollHeight;
     const mouseX = event.pageX / -pageX;
     const mouseY = event.pageY;
+
     const yAxis = ((pageY / 2 - mouseY) / pageY) * 300;
-    const xAxis = -mouseX * 100 - 100;
+    const xAxis = -mouseX * 65 - 65;  /* 页面中心 */
     ghostEyes.style.transform = `translate(${xAxis}%, ${-yAxis}%)`;
 });

@@ -9,10 +9,12 @@
 
 .box__ghost {
     padding: 15px 25px 25px;
-    position: absolute;
-    left: 50%;
-    top: 30%;
-    transform: translate(-50%, -30%);
+    display: flex;
+    flex-direction: column; /* 垂直方向排列 */
+    margin: auto;
+    justify-content: center;
+    position: relative;
+    /* transform: translate(-50%, -30%); */
 }
 
 .box__ghost .symbol:nth-child(1) {
@@ -20,30 +22,30 @@
     animation: shine 4s ease-in-out 3s infinite;
 }
 
-.box__ghost .symbol:nth-child(1):before,
-.box__ghost .symbol:nth-child(1):after {
+.box__ghost .symbol:nth-child(1)::before,
+.box__ghost .symbol:nth-child(1)::after {
     content: '';
     width: 12px;
     height: 4px;
     background: #fff;
-    position: absolute;
     border-radius: 5px;
-    bottom: 65px;
-    left: 0;
+    position: absolute;
+    bottom: 40%;
+    left: 30%;
 }
 
-.box__ghost .symbol:nth-child(1):before {
+.box__ghost .symbol:nth-child(1)::before {
     transform: rotate(45deg);
 }
 
-.box__ghost .symbol:nth-child(1):after {
+.box__ghost .symbol:nth-child(1)::after {
     transform: rotate(-45deg);
 }
 
 .box__ghost .symbol:nth-child(2) {
     position: absolute;
-    left: -5px;
-    top: 30px;
+    left: 28%;
+    top: 25%;
     height: 18px;
     width: 18px;
     border: 4px solid;
@@ -58,23 +60,23 @@
     animation: shine 3s ease-in-out 0.5s infinite;
 }
 
-.box__ghost .symbol:nth-child(3):before,
-.box__ghost .symbol:nth-child(3):after {
+.box__ghost .symbol:nth-child(3)::before,
+.box__ghost .symbol:nth-child(3)::after {
     content: '';
     width: 12px;
     height: 4px;
     background: #fff;
-    position: absolute;
     border-radius: 5px;
-    top: 5px;
-    left: 40px;
+    position: absolute;
+    left: 40%;
+    top: 3%;
 }
 
-.box__ghost .symbol:nth-child(3):before {
+.box__ghost .symbol:nth-child(3)::before {
     transform: rotate(90deg);
 }
 
-.box__ghost .symbol:nth-child(3):after {
+.box__ghost .symbol:nth-child(3)::after {
     transform: rotate(180deg);
 }
 
@@ -86,13 +88,13 @@
 .box__ghost .symbol:nth-child(4):before,
 .box__ghost .symbol:nth-child(4):after {
     content: '';
-    width: 15px;
+    width: 12px;
     height: 4px;
     background: #fff;
-    position: absolute;
     border-radius: 5px;
-    top: 10px;
-    right: 30px;
+    position: absolute;
+    right: 40%;
+    top: 6%;
 }
 
 .box__ghost .symbol:nth-child(4):before {
@@ -105,8 +107,8 @@
 
 .box__ghost .symbol:nth-child(5) {
     position: absolute;
-    right: 5px;
-    top: 40px;
+    right: 30%;
+    top: 30%;
     height: 12px;
     width: 12px;
     border: 3px solid;
@@ -127,10 +129,10 @@
     width: 15px;
     height: 4px;
     background: #fff;
-    position: absolute;
     border-radius: 5px;
-    bottom: 65px;
-    right: -5px;
+    position: absolute;
+    bottom: 40%;
+    right: 30%;
 }
 
 .box__ghost .symbol:nth-child(6):before {
@@ -147,6 +149,7 @@
     height: 100px;
     border-radius: 100px 100px 0 0;
     position: relative;
+    overflow: visible; /* 确保超出部分可见 */
     margin: 0 auto;
     animation: upndown 3s ease-in-out infinite;
 }
@@ -154,9 +157,9 @@
 .box__ghost .box__ghost-container .box__ghost-eyes {
     position: absolute;
     left: 50%;
-    top: 45%;
+    top: 30%;
     height: 12px;
-    width: 70px;
+    width: 50px;
 }
 
 .box__ghost .box__ghost-container .box__ghost-eyes .box__eye-left {
@@ -166,7 +169,7 @@
     border-radius: 50%;
     margin: 0 10px;
     position: absolute;
-    left: 0;
+    left: -18%;
 }
 
 .box__ghost .box__ghost-container .box__ghost-eyes .box__eye-right {
@@ -176,7 +179,7 @@
     border-radius: 50%;
     margin: 0 10px;
     position: absolute;
-    right: 0;
+    right: -18%;
 }
 
 .box__ghost .box__ghost-container .box__ghost-bottom {
@@ -185,6 +188,7 @@
     top: 100%;
     left: 0;
     right: 0;
+    overflow: visible;
 }
 
 .box__ghost .box__ghost-container .box__ghost-bottom div {
@@ -198,8 +202,8 @@
 
 .box__ghost .box__ghost-container .box__ghost-bottom div:nth-child(2n) {
     top: -12px;
-    margin: 0 0px;
-    border-top: 15px solid #332f63;
+    margin: 0;
+    border-top: 15px solid #22212c;
     background: transparent;
 }
 
